@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c10da0660c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <nav class="bg-primary w-full py-6">
+      <div
+        class="flex p-6 justify-between text-gray-50 items-center container mx-auto"
+      >
+        <div class="text-2xl font-semibold"><a href="#">ROV</a></div>
+        <div class="space-x-6 hidden md:flex">
+          <div class="">
+            <a href="#home" class="menu">Home</a>
+          </div>
+          <div class="">
+            <a href="#services" class="menu">Services</a>
+          </div>
+          <div class="">
+            <a href="#services" class="menu">Skills</a>
+          </div>
+          <div class="">
+            <a href="#" class="menu">Portfolio</a>
+          </div>
+          <div class="">
+            <a href="#" class="menu">Resume</a>
+          </div>
+          <div class="">
+            <a href="#" class="menu">Contact</a>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <a href="#contact" class="btn">Hire Me</a>
+        </div>
+
+        <!-- HAMBURGER MENU -->
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none"
+          type="button"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      </div>
+
+      <!--  MOBILE MENU -->
+      <div
+        id="menu"
+        class="relative w-[90%] hidden p-6 rounded-lg bg-tertiary left-6 right-6 z-10"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-black rounded-sm"
+        >
+          <a href="#home" class="w-full items  text-center  hover:text-amber-900"> Home </a>
+          <a href="#services" class="w-full items hover:text-amber-900  text-center"> Services </a>
+          <a href="#skills" class="w-full items hover:text-amber-900  text-center"> Skills </a>
+          <a href="#portfolio" class=" items hover:text-amber-900">Portfolio</a>
+          <a href="#resume" class=" items hover:text-amber-900">Resume</a>
+          <a href="#contact" class=" items hover:text-amber-900">Contact</a>
+          <div class="">
+            <a href="#contact" class="btn-mobile">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="py-16 bg-primary">
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col -mt-12 md:flex-row-reverse space-y-4 md:space-y-0 justify-between items-center"
+        >
+          <div class="hidden md:block w-full md:w-1/2 md:ml-6">
+            <div class="relative">
+              <div
+                class="absolute bg-primary2 md:top-24 md:left-3 w-[22rem] h-[22rem] rounded-full z-10"
+              ></div>
+              <img
+                src="/images/myprofile2.png"
+                class="z-30 w-2/3 mx-auto right-20 bottom-16 h-[25rem] md:w-[40rem] md:h-[27rem] rounded-b-2xl relative"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="flex w-full flex-col space-y-14 md:w-1/2 tracking-wider text-gray-50"
+          >
+            <div class="flex flex-col w-full space-y-2">
+              <div
+                class="hidden py-2 px-3 bg-transparent border border-gray-50 text-left md:text-center w-72 text-secondary2 text-lg uppercase"
+              >
+                Welcome to my world
+              </div>
+              <h4 class="text-lg">
+                Hello, <span class="text-secondary2 text-xl">I'm</span>
+              </h4>
+              <h1 class="text-4xl md:text-5xl font-semibold">
+                Victor Uzoma
+                <span
+                  ><img
+                    src="/images/my-image3.jpeg"
+                    class="rounded-full ml-2 w-10 h-10 inline-block ring-1 md:hidden ring-secondary"
+                    alt=""
+                /></span>
+              </h1>
+              <h3 class="text-2xl capitalize mb-12">
+                Web developer and designer
+              </h3>
+              <p class="text-sm leading-6 pt-4">
+                I love learning new things, i love to Create and Explore. I am
+                obsessed with answers and solving problems! I am passionate
+                about using my knowledge and experience to make a difference in
+                the world in any way I can. <br />
+                Also a Dental Technician, and while i'm not coding, i enjoy
+                cooking and trying new meals, as well as travelling and watching
+                movies
+              </p>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <h3 class="uppercase text-lg">Find Me On</h3>
+              <div class="flex space-x-4">
+                <a href="https://www.facebook.com/onwuzurike.victor.3">
+                  <div
+                  class="flex justify-center items-center bg-secondary px-6 py-4 shadow-sm shadow-secondary2 group"
+                >
+                  <i
+                    class="fa-brands fa-facebook-f text-xl group-hover:scale-150 transition duration-300"
+                  ></i>
+                </div>
+                </a>
+                <a href="https://twitter.com/VictorRaymond_1">
+                  <div
+                  class="flex justify-center items-center bg-secondary px-6 py-4 shadow-sm shadow-secondary2 group"
+                >
+                  <i
+                    class="fa-brands fa-twitter text-xl group-hover:scale-150 transition duration-300"
+                  ></i>
+                </div>
+                </a>
+                <a href="https://instagram.com/viktorzurike?igshid=YmMyMTA2M2Y=">
+                  <div
+                  class="flex justify-center items-center bg-secondary px-6 py-4 shadow-sm shadow-secondary2 group"
+                >
+                  <i
+                    class="fa-brands fa-instagram text-xl group-hover:scale-150 transition duration-300"
+                  ></i>
+                </div>
+                </a>
+                <a href="#">
+                  <div
+                  class="flex justify-center items-center bg-secondary px-6 py-4 shadow-sm shadow-secondary2 group"
+                >
+                  <i
+                    class="fa-brands fa-whatsapp text-xl group-hover:scale-150 transition duration-300"
+                  ></i>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="flex space-x-8">
+              <div class="flex flex-col space-y-2">
+                <h3 class="text-4xl font-semibold">1+</h3>
+                <p class="uppercase text-md">Year of Experience</p>
+              </div>
+              <div class="flex flex-col space-y-2">
+                <h3 class="text-4xl font-semibold">3+</h3>
+                <p class="uppercase text-md">working client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-primary2">
+      <div class="container mx-auto px-4 text-gray-50 tracking-wider">
+        <div class="flex flex-col space-y-4 mb-8">
+          <h3 class="big-heading">My Services</h3>
+          <p class="max-w-lg text-md text-center mx-auto font-thin">
+            We will help you in building your digital web presence to a standard
+            you will love
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6"
+        >
+          <!-- SERVICES BOX 1 -->
+          <div class="flex w-full md:w-1/3 h-64 md:h-80">
+            <div class="service-box-2">
+              <div class="p-5 rounded-full bg-secondary">
+                <img src="/images/app-dev.png" class="w-10 h-10" alt="" />
+              </div>
+              <h3 class="text-2xl font-semibold">App Development</h3>
+              <p class="text-sm text-gray-200 text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                quas. Nesciunt corrupti voluptas consequuntur numquam.
+              </p>
+            </div>
+          </div>
+
+          <!-- SERVICES BOX 2 -->
+          <div class="w-full md:w-1/3 flex h-80 md:h-96">
+            <div class="service-box">
+              <div class="p-5 rounded-full bg-tertiary">
+                <img src="/images/web-dev.png" class="w-10 h-10" alt="" />
+              </div>
+              <h3 class="text-2xl font-semibold text-center">
+                Web Development
+              </h3>
+              <p class="text-sm text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                quas. Nesciunt corrupti voluptas consequuntur numquam.
+              </p>
+            </div>
+          </div>
+
+          <!-- SERVICES BOX 3 -->
+          <div class="flex w-full md:w-1/3 h-64 md:h-80">
+            <div class="service-box-2">
+              <div class="p-5 rounded-full bg-secondary">
+                <img src="/images/UI-UX.png" class="w-10 h-10" alt="" />
+              </div>
+              <h3 class="text-2xl font-semibold">UI/UX Design</h3>
+              <p class="text-gray-200 text-sm text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                quas. Nesciunt corrupti voluptas consequuntur numquam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-16 bg-primary">
+      <div class="container mx-auto px-4 text-gray-50">
+        <div class="big-heading mb-8">My Skills</div>
+
+        <!-- 1st SKILLS ROW -->
+        <div class="grid gap-4 grid-cols-2 md:grid-cols-4 mb-8">
+          <!-- HTML BOX -->
+          <div
+            class="flex flex-col items-center justify-center bg-primary2 p-6 rounded-2xl shadow-lg shadow-primary2 space-y-4 cursor-pointer group hover:bg-secondary transition-all duration-300"
+          >
+            <div class="">
+              <img src="/images/html-img.png" class="h-20 w-20" alt="" />
+            </div>
+            <h3 class="big-heading2">95%</h3>
+            <h3 class="sm-heading">Html</h3>
+          </div>
+
+          <!-- CSS BOX -->
+          <div
+            class="flex flex-col items-center justify-center bg-primary2 p-6 rounded-2xl shadow-lg shadow-primary2 space-y-4 cursor-pointer group hover:bg-secondary transition-all duration-300"
+          >
+            <div class="">
+              <img src="/images/css-img.png" class="h-20 w-20" alt="" />
+            </div>
+            <h3 class="big-heading2">90%</h3>
+            <h3 class="sm-heading">CSS</h3>
+          </div>
+
+          <!-- BOOTSTRAP BOX -->
+          <div
+            class="flex flex-col items-center justify-center bg-primary2 p-6 rounded-2xl shadow-lg shadow-primary2 space-y-4 cursor-pointer group hover:bg-secondary transition-all duration-300"
+          >
+            <div class="">
+              <img src="/images/bootstrap-img.png" class="h-24 w-24" alt="" />
+            </div>
+            <h3 class="big-heading2">80%</h3>
+            <h3 class="sm-heading">Bootstrap</h3>
+          </div>
+
+          <!-- JS BOX -->
+          <div
+            class="flex flex-col items-center justify-center bg-primary2 p-6 rounded-2xl shadow-lg shadow-primary2 space-y-4 cursor-pointer group hover:bg-secondary transition-all duration-300"
+          >
+            <div class="">
+              <img src="/images/tailwind-img.png" class="h-20 w-20" alt="" />
+            </div>
+            <h3 class="big-heading2">80%</h3>
+            <h3 class="sm-heading">Tailwind</h3>
+          </div>
+        </div>
+
+        <!-- 2nd SKILLS ROW -->
+        <div class="grid gap-4 grid-cols-2 md:grid-cols-3 md:w-3/4 mx-auto">
+          <!-- JS BOX -->
+          <div
+            class="flex flex-col items-center justify-center bg-primary2 p-6 rounded-2xl shadow-lg shadow-primary2 space-y-4 cursor-pointer group hover:bg-secondary transition-all duration-300"
+          >
+            <div class="">
+              <img src="/images/js-img.png" class="h-20 w-24" alt="" />
+            </div>
+            <h3 class="big-heading2">15%</h3>
+            <h3 class="sm-heading">Javascript</h3>
+          </div>
+
+          <!-- REACT BOX -->
+          <div
+            class="flex flex-col items-center justify-center bg-primary2 p-6 rounded-2xl shadow-lg shadow-primary2 space-y-4 cursor-pointer group hover:bg-secondary transition-all duration-300"
+          >
+            <div class="">
+              <img src="/images/react-img.png" class="h-20 w-20" alt="" />
+            </div>
+            <h3 class="big-heading2">10%</h3>
+            <h3 class="sm-heading">React</h3>
+          </div>
+
+          <!-- JS BOX -->
+          <div
+            class="flex flex-col items-center justify-center bg-primary2 p-6 rounded-2xl shadow-lg shadow-primary2 space-y-4 cursor-pointer group hover:bg-secondary transition-all duration-300"
+          >
+            <div class="">
+              <img src="/images/git-img.png" class="h-20 w-20" alt="" />
+            </div>
+            <h3 class="big-heading2">20%</h3>
+            <h3 class="sm-heading">Git Control</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY RESUME -->
+    <section id="resume" class="py-20 bg-primary2">
+      <!-- RESUME CONTAINER -->
+      <div class="container mx-auto px-4">
+        <!-- RESUME HEADING -->
+        <div class="flex justify-start mb-14">
+          <div class="flex flex-col w-1/2">
+            <h3 class="text-4xl font-semibold capitalize text-gray-50">
+              Education
+            </h3>
+            <p class="text-secondary2 text-sm">2008 - 2022</p>
+          </div>
+          <div class="flex-col w-1/2 hidden md:flex">
+            <h3 class="text-4xl font-semibold capitalize text-gray-50">
+              Job Experience Quality
+            </h3>
+            <p class="text-secondary2 text-sm">2008 - 2022</p>
+          </div>
+        </div>
+
+        <!-- RESUME DETAILS -->
+        <div class="flex flex-col md:flex-row justify-start">
+          <!-- EDUCATION DETAILS -->
+          <div
+            class="flex flex-col space-y-6 text-gray-50 border-l-2 border-l-secondary2 justify-center"
+          >
+            <div class="relative">
+              <div
+                class="absolute w-3 h-3 top-7 -left-2 rounded-full bg-secondary2"
+              ></div>
+              <div class="absolute top-8 w-6 h-1 bg-secondary2"></div>
+              <div class="px-6">
+                <div
+                  class="flex space-y-4 flex-col p-6 py-8 bg-primary shadow-lg rounded-lg"
+                >
+                  <div class="flex flex-col">
+                    <h3
+                      class="capitalize text-2xl font-semibold tracking-wider"
+                    >
+                      West African Senior School Certificate
+                    </h3>
+                    <p class="text-xs text-gray-300 font-extralight">
+                      Mater Ecclesiae Seminary (2008 - 2014)
+                    </p>
+                  </div>
+                  <p class="text-sm leading-6">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias quasi corporis quod iure beatae enim similique
+                    debitis fugiat facere maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div
+                class="absolute w-3 h-3 top-7 -left-2 rounded-full bg-secondary2"
+              ></div>
+              <div class="absolute top-8 w-6 h-1 bg-secondary2"></div>
+              <div class="px-6">
+                <div
+                  class="flex space-y-4 flex-col p-6 py-8 bg-primary shadow-lg rounded-lg"
+                >
+                  <div class="flex flex-col">
+                    <h3
+                      class="capitalize text-2xl font-semibold tracking-wider"
+                    >
+                      Bachelor Of Technology
+                    </h3>
+                    <p class="text-xs text-gray-300 font-extralight">
+                      FUTO (2015 - 2020)
+                    </p>
+                  </div>
+                  <p class="text-sm leading-6">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias quasi corporis quod iure beatae enim similique
+                    debitis fugiat facere maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div
+                class="absolute w-3 h-3 top-7 -left-2 rounded-full bg-secondary2"
+              ></div>
+              <div class="absolute top-8 w-6 h-1 bg-secondary2"></div>
+              <div class="px-6">
+                <div
+                  class="flex space-y-4 flex-col p-6 py-8 bg-primary shadow-lg rounded-lg"
+                >
+                  <div class="flex flex-col">
+                    <h3
+                      class="capitalize text-2xl font-semibold tracking-wider"
+                    >
+                      Certificate Of Completion
+                    </h3>
+                    <p class="text-xs text-gray-300 font-extralight">
+                      Udemy (2020 - 2022)
+                    </p>
+                  </div>
+                  <p class="text-sm leading-6">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias quasi corporis quod iure beatae enim similique
+                    debitis fugiat facere maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EDUCATION DETAILS -->
+          <div class="flex-col mt-16 mb-6 flex md:hidden">
+            <h3 class="text-4xl font-semibold capitalize text-gray-50">
+              Job Experience Quality
+            </h3>
+            <p class="text-secondary2 text-sm">2008 - 2022</p>
+          </div>
+          <div
+            class="flex flex-col space-y-6 text-gray-50 border-l-2 border-l-secondary2 justify-center"
+          >
+            <div class="relative">
+              <div
+                class="absolute w-3 h-3 top-7 -left-2 rounded-full bg-secondary2"
+              ></div>
+              <div class="absolute top-8 w-6 h-1 bg-secondary2"></div>
+              <div class="px-6">
+                <div
+                  class="flex space-y-4 flex-col p-6 py-8 bg-primary shadow-lg rounded-lg"
+                >
+                  <div class="flex flex-col">
+                    <h3
+                      class="capitalize text-2xl font-semibold tracking-wider"
+                    >
+                      Dental Technology Intern (Technician)
+                    </h3>
+                    <p class="text-xs text-gray-300 font-extralight">
+                      AEFUTHA (2022 - 2023)
+                    </p>
+                  </div>
+                  <p class="text-sm leading-6">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias quasi corporis quod iure beatae enim similique
+                    debitis fugiat facere maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div
+                class="absolute w-3 h-3 top-7 -left-2 rounded-full bg-secondary2"
+              ></div>
+              <div class="absolute top-8 w-6 h-1 bg-secondary2"></div>
+              <div class="px-6">
+                <div
+                  class="flex space-y-4 flex-col p-6 py-8 bg-primary shadow-lg rounded-lg"
+                >
+                  <div class="flex flex-col">
+                    <h3
+                      class="capitalize text-2xl font-semibold tracking-wider"
+                    >
+                      Website Designer/Developer
+                    </h3>
+                    <p class="text-xs text-gray-300 font-extralight">
+                      Smartech Career Services (2019 - 2020)
+                    </p>
+                  </div>
+                  <p class="text-sm leading-6">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias quasi corporis quod iure beatae enim similique
+                    debitis fugiat facere maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div
+                class="absolute w-3 h-3 top-7 -left-2 rounded-full bg-secondary2"
+              ></div>
+              <div class="absolute top-8 w-6 h-1 bg-secondary2"></div>
+              <div class="px-6">
+                <div
+                  class="flex space-y-4 flex-col p-6 py-8 bg-primary shadow-lg rounded-lg"
+                >
+                  <div class="flex flex-col">
+                    <h3
+                      class="capitalize text-2xl font-semibold tracking-wider"
+                    >
+                      Website Developer
+                    </h3>
+                    <p class="text-xs text-gray-300 font-extralight">
+                      Ritaz Beauty Store (2020 - 2021)
+                    </p>
+                  </div>
+                  <p class="text-sm leading-6">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias quasi corporis quod iure beatae enim similique
+                    debitis fugiat facere maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="py-20 bg-primary">
+      <!-- PORTFOLIO CONTAINER -->
+      <div class="mx-auto px-12 lg:px-16">
+        <h3 class="big-heading text-gray-50 mb-12">My Latest Project</h3>
+
+        <!-- PROJECT GALLERY -->
+        <div class="hidden md:grid gap-6 grid-cols-2 md:grid-cols-3">
+          <!-- BOX 1 -->
+          <div class="group relative">
+            <div class="portfolio-overlay"></div>
+            <div class="site-details-container">
+              <div class="site-details-flex">
+                <h3 class="site-details-heading">Personal Website</h3>
+                <p class="site-details-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non,
+                  voluptatem.
+                </p>
+                <a href="https://github.com/Bossmariq?tab=repositories" class="site-details-button"
+                  >View Site
+                  <i class="fa-solid fa-angles-right"></i>
+                </a>
+              </div>
+            </div>
+            <img
+              src="/images/Screenshot-4.png"
+              class="h-full rounded-xl"
+              alt=""
+            />
+          </div>
+
+          <!-- BOX 2 -->
+          <div class="group relative">
+            <div class="portfolio-overlay"></div>
+            <div class="site-details-container">
+              <div class="site-details-flex">
+                <h3 class="site-details-heading">Smartech Website</h3>
+                <p class="site-details-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non,
+                  voluptatem.
+                </p>
+                <a href="https://bossmariq.github.io/working-smartech/" class="site-details-button"
+                  >View Site
+                  <i class="fa-solid fa-angles-right"></i>
+                </a>
+              </div>
+            </div>
+            <img
+              src="/images/Screenshot-5.png"
+              class="h-full rounded-xl"
+              alt=""
+            />
+          </div>
+
+          <!-- BOX 3 -->
+          <div class="group relative">
+            <div class="portfolio-overlay"></div>
+            <div class="site-details-container">
+              <div class="site-details-flex">
+                <h3 class="site-details-heading">RitazBeauty Website</h3>
+                <p class="site-details-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non,
+                  voluptatem.
+                </p>
+                <a href="https://bossmariq.github.io/Ritazbeautystore/" class="site-details-button"
+                  >View Site
+                  <i class="fa-solid fa-angles-right"></i>
+                </a>
+              </div>
+            </div>
+            <img
+              src="/images/Screenshot-6.png"
+              class="h-full rounded-xl"
+              alt=""
+            />
+          </div>
+
+          <!-- BOX 4 -->
+          <div class="group relative">
+            <div class="portfolio-overlay"></div>
+            <div class="site-details-container">
+              <div class="site-details-flex">
+                <h3 class="site-details-heading">Mmaogo Website</h3>
+                <p class="site-details-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non,
+                  voluptatem.
+                </p>
+                <a href="https://bossmariq.github.io/project/" class="site-details-button"
+                  >View Site
+                  <i class="fa-solid fa-angles-right"></i>
+                </a>
+              </div>
+            </div>
+            <img
+              src="/images/Screenshot-7.png"
+              class="h-full rounded-xl"
+              alt=""
+            />
+          </div>
+
+          <!-- BOX 5 -->
+          <div class="group relative">
+            <div class="portfolio-overlay"></div>
+            <div class="site-details-container">
+              <div class="site-details-flex">
+                <h3 class="site-details-heading">Chatting Website</h3>
+                <p class="site-details-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non,
+                  voluptatem.
+                </p>
+                <a href="https://bossmariq.github.io/chat-app-css-illustration-frontend-mentor-challenge-/" class="site-details-button"
+                  >View Site
+                  <i class="fa-solid fa-angles-right"></i>
+                </a>
+              </div>
+            </div>
+            <img
+              src="/images/Screenshot-8.png"
+              class="h-full rounded-xl"
+              alt=""
+            />
+          </div>
+
+          <!-- BOX 6 -->
+          <div class="group relative">
+            <div class="portfolio-overlay"></div>
+            <div class="site-details-container">
+              <div class="site-details-flex">
+                <h3 class="site-details-heading">Loopstudios Website</h3>
+                <p class="site-details-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non,
+                  voluptatem.
+                </p>
+                <a href="https://bossmariq.github.io/Loopstudios/" class="site-details-button"
+                  >View Site
+                  <i class="fa-solid fa-angles-right"></i>
+                </a>
+              </div>
+            </div>
+            <img
+              src="/images/Screenshot-9.png"
+              class="h-full rounded-xl"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- MOBILE PORTFOLIO -->
+        <div class="grid md:hidden gap-6 grid-cols-2 md:grid-cols-3">
+          <!-- BOX 1 -->
+          <div class="site-details-card-mobile">
+            <a href="#">
+              <img class="rounded-t-lg" src="/images/Screenshot-8.png" alt="" />
+            </a>
+            <div class="p-2 py-3 text-center">
+              <a href="#">
+                <h5 class="site-details-heading-mobile">Chat-App Website</h5>
+              </a>
+              <div class="">
+                <a href="https://bossmariq.github.io/chat-app-css-illustration-frontend-mentor-challenge-/" class="site-details-button-mobile">
+                  View Site
+                  <i class="fa-solid fa-angles-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOX 2 -->
+          <div class="site-details-card-mobile">
+            <a href="#">
+              <img class="rounded-t-lg" src="/images/Screenshot-6.png" alt="" />
+            </a>
+            <div class="p-2 py-3 text-center">
+              <a href="#">
+                <h5 class="site-details-heading-mobile">RitazBeauty Website</h5>
+              </a>
+              <div class="">
+                <a href="https://bossmariq.github.io/Ritazbeautystore/" class="site-details-button-mobile">
+                  View Site
+                  <i class="fa-solid fa-angles-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOX 3 -->
+          <div class="site-details-card-mobile">
+            <a href="#">
+              <img class="rounded-t-lg" src="/images/Screenshot-5.png" alt="" />
+            </a>
+            <div class="p-2 py-3 text-center">
+              <a href="#">
+                <h5 class="site-details-heading-mobile">Smartech  Website</h5>
+              </a>
+              <div class="">
+                <a href="https://bossmariq.github.io/working-smartech/" class="site-details-button-mobile">
+                  View Site
+                  <i class="fa-solid fa-angles-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOX 4 -->
+          <div class="site-details-card-mobile">
+            <a href="#">
+              <img class="rounded-t-lg" src="/images/Screenshot-7.png" alt="" />
+            </a>
+            <div class="p-2 py-3 text-center">
+              <a href="#">
+                <h5 class="site-details-heading-mobile">Mmaogo Website</h5>
+              </a>
+              <div class="">
+                <a href="https://bossmariq.github.io/project/" class="site-details-button-mobile">
+                  View Site
+                  <i class="fa-solid fa-angles-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOX 5 -->
+          <div class="site-details-card-mobile">
+            <a href="#">
+              <img class="rounded-t-lg" src="/images/Screenshot-4.png" alt="" />
+            </a>
+            <div class="p-2 py-3 text-center">
+              <a href="#">
+                <h5 class="site-details-heading-mobile">Personal Website</h5>
+              </a>
+              <div class="">
+                <a href="https://bossmariq.github.io/Growing-CV/" class="site-details-button-mobile">
+                  View Site
+                  <i class="fa-solid fa-angles-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOX 6 -->
+          <div class="site-details-card-mobile">
+            <a href="#">
+              <img class="rounded-t-lg" src="/images/Screenshot-9.png" alt="" />
+            </a>
+            <div class="p-2 py-3 text-center flex flex-col">
+              <a href="#">
+                <h5 class="site-details-heading-mobile">Loopstudios Website</h5>
+              </a>
+              <div class="">
+                <a href="https://bossmariq.github.io/Loopstudios/" class="site-details-button-mobile">
+                  View Site
+                  <i class="fa-solid fa-angles-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center py-8">
+          <a
+            href="https://github.com/Bossmariq?tab=repositories"
+            class="px-4 py-2 md:py-3 shadow-md shadow-tertiary bg-tertiary transition-all duration-300 hover:scale-95 rounded-lg tracking-wider font-semibold text-md"
+            >View More
+            <svg
+              aria-hidden="true"
+              class="ml-2 -mr-1 w-4 h-4 inline-block"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT ME -->
+    <section id="contact" class="py-20 bg-primary2">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-col space-y-2 text-gray-50 text-center mb-10">
+          <p class="text-lg uppercase text-secondary2">contact me</p>
+          <h3 class="big-heading">Get In touch</h3>
+        </div>
+
+        <!-- CONTACT & DETAILS FLEX -->
+        <div
+          class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8"
+        >
+          <div class="flex flex-col space-y-8 w-full md:w-1/3">
+            <div
+              class="flex flex-col space-y-4 items-center justify-center text-center bg-primary shadow-xl rounded-lg w-full py-6 px-8"
+            >
+              <i class="fa-solid fa-address-card text-5xl text-secondary2"></i>
+              <p class="text-gray-50 text-sm">
+                No 5 Sir Otuh Street Emefor Abakiliki Nigeria
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col space-y-4 items-center justify-center text-center bg-primary shadow-xl rounded-lg w-full py-6 px-8"
+            >
+              <i class="fa-solid fa-phone text-5xl text-secondary2"></i>
+              <p class="text-gray-50 text-sm">+234 80 456 67654</p>
+            </div>
+
+            <div
+              class="flex flex-col space-y-4 items-center justify-center text-center bg-primary shadow-xl rounded-lg w-full py-6 px-8"
+            >
+              <i class="fa-solid fa-envelope text-5xl text-secondary2"></i>
+              <p class="text-gray-50 text-sm">onwuzurikevictor97@gmail.com</p>
+            </div>
+
+            <div
+              class="flex flex-col space-y-4 items-center justify-center text-center bg-primary shadow-xl rounded-lg w-full py-6 px-8"
+            >
+              <i class="fa-solid fa-check text-5xl text-secondary2"></i>
+              <p class="text-gray-50 text-sm">Freelancing available</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-primary w-full md:w-2/3 opacity-90 rounded-lg shadow-xl px-8 py-10"
+          >
+            <form>
+              <div class="flex flex-col space-y-4 md:space-y-8">
+                <div
+                  class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
+                >
+                  <input
+                    type="text"
+                    required=""
+                    placeholder="Enter Your Name"
+                    class="block w-full p-4 text-center text-white bg-yellow-900 border border-yellow-900 placeholder:text-sm placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none focus:bg-yellow-900 shadow-sm rounded-lg"
+                  />
+                  <input
+                    type="text"
+                    required=""
+                    placeholder="Enter Your Phone Number"
+                    class="block w-full p-4 text-center text-white bg-yellow-900 border border-yellow-900 placeholder:text-sm placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none focus:bg-yellow-900 shadow-sm rounded-lg"
+                  />
+                </div>
+
+                <div
+                  class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
+                >
+                  <input
+                    type="email"
+                    required=""
+                    placeholder="Enter Your Email"
+                    class="block w-full p-4 text-center text-white bg-yellow-900 autofill:focus:bg-yellow-900 border border-yellow-900 placeholder:text-sm placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none focus:bg-yellow-900 shadow-sm rounded-lg"
+                  />
+                  <input
+                    type="text"
+                    required=""
+                    placeholder="Enter Your Subject "
+                    class="block w-full p-4 text-center text-white bg-yellow-900 border border-yellow-900 placeholder:text-sm placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none focus:bg-yellow-900 shadow-sm rounded-lg"
+                  />
+                </div>
+
+                <div class="">
+                  <textarea
+                    id="message"
+                    rows="10"
+                    class="block p-4 w-full text-sm text-white bg-yellow-900 rounded-lg border border-yellow-900 focus:ring-yellow-900 focus:border-yellow-900 placeholder:text-center md:text-left placeholder:md:text-left focus:bg-yellow-900 focus:outline-none"
+                    placeholder="Type Your Message"
+                  ></textarea>
+                </div>
+                <div
+                  class="flex items-center justify-center pt-4 md:pt-0 md:mt-0"
+                >
+                  <button
+                    type="submit"
+                    class="text-white bg-yellow-900 hover:scale-95 transition duration-300 focus:ring-2 focus:outline-none focus:ring-yellow-900 font-medium rounded-lg text-sm px-16 py-4 w-full md:w-auto text-center"
+                  >
+                    Send Message
+                    <i class="fa-solid fa-paper-plane ml-3"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="w-full h-1 bg-primary mt-16"></div>
+      </div>
+    </section>
+
+    <footer id="footer" class="pt-2 pb-16 text-gray-50 bg-primary2">
+      <div class="container mx-auto">
+        <div class="flex flex-col space-y-8 items-center justify-center">
+          <div class="text-4xl font-semibold"><a href="#">ROV</a></div>
+          <div class="grid grid-cols-4 md:grid-cols-6 gap-6 ">
+            <div
+              class="flex justify-center items-center bg-secondary px-4 rounded-md py-4 shadow-sm shadow-secondary2 group"
+            >
+              <i
+                class="fa-brands fa-facebook-f text-xl group-hover:scale-150 transition duration-300"
+              ></i>
+            </div>
+            <div
+              class="flex justify-center items-center bg-secondary px-4 rounded-md py-4 shadow-sm shadow-secondary2 group"
+            >
+              <i
+                class="fa-brands fa-twitter text-xl group-hover:scale-150 transition duration-300"
+              ></i>
+            </div>
+            <div
+              class="hidden md:flex justify-center items-center bg-secondary px-4 rounded-md py-4 shadow-sm shadow-secondary2 group"
+            >
+              <i
+                class="fa-brands fa-instagram text-xl group-hover:scale-150 transition duration-300"
+              ></i>
+            </div>
+            <div
+              class="flex justify-center items-center bg-secondary px-4 rounded-md py-4 shadow-sm shadow-secondary2 group"
+            >
+              <i
+                class="fa-brands fa-whatsapp text-xl group-hover:scale-150 transition duration-300"
+              ></i>
+            </div>
+            <div
+              class="hidden md:flex justify-center items-center bg-secondary px-4 rounded-md py-4 shadow-sm shadow-secondary2 group "
+            >
+              <i
+                class="fa-brands fa-github text-xl group-hover:scale-150 transition duration-300"
+              ></i>
+            </div>
+            <div
+              class="flex justify-center  items-center bg-secondary px-4 rounded-md py-4 shadow-sm shadow-secondary2 group"
+            >
+              <i
+                class="fa-brands fa-linkedin text-xl group-hover:scale-150 transition duration-300"
+              ></i>
+            </div>
+          </div>
+          <div class="text-xs">rov @ 2022 All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
